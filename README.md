@@ -10,6 +10,7 @@ A modern, lightweight pizza ordering app that fetches its menu directly from a b
 - 🛒 Fully functional cart with item management
 - 💾 Persistent cart & user name stored in `localStorage`
 - 📋 Checkout system with name prefill from local data
+- 📍  Uses geolocation to automatically fill in the user's address
 - 🚚 Payment on delivery (no online payment integration)
 - ⭐ Priority orders (with additional fees)
 - 🧾 Order tracking using unique Tracking ID
@@ -19,9 +20,9 @@ A modern, lightweight pizza ordering app that fetches its menu directly from a b
 
 ## 🖥️ Tech Stack
 
-- Frontend: HTML/CSS/JS or React (replace with actual stack if needed)
-- State & Storage: Local Storage
-- Backend API: External or custom API for menu & order handling
+- Frontend: React Tailwind CSS
+- State & Storage: Local Storage Redux toolkit
+- Backend API: External API for menu & order handling
 
 ---
 
@@ -30,7 +31,7 @@ A modern, lightweight pizza ordering app that fetches its menu directly from a b
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/pizza-menu-app.git
+git clone https://github.com/zeirrow/pizza-menu-app.git
 cd pizza-menu-app
 ````
 
@@ -119,15 +120,21 @@ Then go to [http://localhost:5173](http://localhost:5173)
 ## 📁 Project Structure (example)
 
 ```
-/src
-  /components
-  /pages
+src
+  /features
+    /cart
+    /menu
+    /order
+    /user
   /services
+  /ui
   /utils
-  App.js
-  main.js
-```
+  /App.jsx
+  /index.css
+  /main.jsx
+  /store.js 
 
+```
 ---
 
 ## 🤝 Contributing
