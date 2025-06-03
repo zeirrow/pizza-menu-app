@@ -46,7 +46,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: '/pizza-menu-app' },
+  // { basename: '/pizza-menu-app' }, // Only needed if deploying to a subdirectory  // Must match repo name if deploying to GitHub Pages
 );
 
 const App = () => {
