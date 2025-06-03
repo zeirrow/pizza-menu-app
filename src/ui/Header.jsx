@@ -8,7 +8,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex items-center justify-between border-b-2 border-yellow-500 bg-yellow-500 py-3 uppercase sm:px-6 md:px-4 md:py-5">
+    <header className="z-40 flex items-center justify-between py-3 uppercase bg-yellow-500 border-b-2 border-yellow-500 sm:px-6 md:px-4 md:py-5">
       {/* Logo */}
       <Link className="tracking-widest" to="/">
         Fast React Pizza Co.
